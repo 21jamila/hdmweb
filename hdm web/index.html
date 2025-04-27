@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <style>
+    
+    .footer-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      background-color: white;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 999;
+    }
+    
+    .footer-item {
+      text-align: center;
+      font-size: 12px;
+      color: #005b96;
+      text-decoration: none;
+    }
+    
+    .footer-icon {
+      width: 28px;
+      height: 28px;
+      margin-bottom: 4px;
+    }
+    
+    .main-btn {
+      background: white;
+      border: 2px solid #000;
+      border-radius: 50px;
+      padding: 10px 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transform: translateY(-15px);
+    }
+    
+    .follow-search-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    
+    .social-media,
+    .site-search {
+      flex: 1 1 45%;
+    }
+    
+    .social-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .social-list a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+    
+    
+    .site-search form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    
+    .site-search input[type="text"] {
+      padding: 10px;
+      flex: 1 1 auto;
+      min-width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .font{
+      font-size: 15px;
+    }
+   
+    
+    
+    
+    
+  </style>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>HDMWeb academy</title>
+  <meta name="title" content="HDMWeb - The Best Program to Enroll for Exchange">
+  <meta name="description" content="This is an education html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top" class="font">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="90" height="20" alt="HdmWeb logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="HdmWeb logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="hmd.html" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="academy.html" class="navbar-link" data-nav-link>Academy</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="programming.html" class="navbar-link" data-nav-link>Programming & Devloppement</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="Services.html" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="articles.html" class="navbar-link" data-nav-link>All articles</a>
+          </li>
+         
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+       
+        <a href="robot.html" class="btn has-before">
+          <span class="span">Talk To A Friend</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      
+  </header>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" id="" aria-label=""
+        style="background-image: url('./assets/images/video-bg.png')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title" >
+              The Best Program to <span class="span" data-translate="enroll">Enroll </span> 
+            </h1>
+
+            <p class="hero-text">
+              The latest developments in the world of artificial intelligence
+            </p>
+            <a href="inscription.html" class="btn has-before">
+              <span class="span">Now in your hands
+              </span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/home.png" alt="AI Illustration" class="hero-image" style="height: auto; width:auto;">
+          </figure>
+          
+
+          
+
+         <br><br>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner" style="position: relative; width: 100%; max-width: 520px; margin: auto;">
+
+            <!-- Responsive YouTube Embed -->
+            <div style="position: relative; padding-bottom: 71.15%; height: 0; overflow: hidden; border-radius: 10px;">
+              <iframe
+                src="https://www.youtube.com/embed/CSE77wAdDLg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              </iframe>
+            </div>
+          
+            <!-- Decorative shapes (optional) -->
+            <img src="./assets/images/about-shape-1.svg" loading="lazy" alt="" class="shape about-shape-1">
+            <img src="./assets/images/about-shape-2.svg" loading="lazy" alt="" class="shape about-shape-2">
+            <img src="./assets/images/about-shape-3.png" loading="lazy" alt="" class="shape about-shape-3">
+          
+          </figure>
+          
+          <div class="about-content">
+
+            <p class="section-subtitle">News of the week</p>
+          
+            <h2 class="h2 section-title">
+              ChatGPT<span class="span">-</span>Operator
+            </h2>
+          
+            <p class="section-text">
+              ChatGPT is an advanced AI language model developed by OpenAI, designed to assist with writing, learning, problem-solving, and much more. Whether you're a student, developer, or business owner, ChatGPT helps you save time and boost productivity by generating human-like responses in real time.
+            </p>
+          
+            <ul class="about-list">
+          
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                <span class="span">24/7 AI Assistance</span>
+              </li>
+          
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                <span class="span">Supports Multiple Languages</span>
+              </li>
+          
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                <span class="span">Ideal for Learning & Creativity</span>
+              </li>
+          
+            </ul>
+          
+            <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt=""
+              class="shape about-shape-4">
+          
+          </div>
+          
+      </section>
+
+
+
+
+
+      <section class="section follow-search">
+        <div class="container">
+      
+          <div class="follow-search-wrapper">
+
+            <!-- Follow Us -->
+            <div class="social-media">
+              <h3 class="h3">Follow us on social media</h3>
+              <br>
+              <ul class="social-list">
+                <li>
+                  <a href="https://www.facebook.com/share/1Acx4pQyQV/" target="_blank" class="facebook">
+                    <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/hdmwebacademy.ma?igsh=anpuZHk3MDJ4OXlx" target="_blank" class="instagram">
+                    <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com" target="_blank" class="linkedin">
+                    <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/212665073010" target="_blank" class="whatsapp">
+                    <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+                    WhatsApp
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
+            <!-- Search Section -->
+            <div class="site-search">
+              <h3 class="h3">Search the site</h3>
+              <br>
+              <form action="/search" method="GET">
+                <input type="text" name="query" placeholder="Search sections..." required>
+                <button type="submit" class="btn has-before">
+                  <span class="span">Search</span>
+                  <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+            </div>
+          
+          </div>
+          
+      
+        </div>
+      </section>
+      
+
+
+
+      
+ 
+      
+
+      
+
+
+
+<br><br>
+
+
+      <!-- 
+        - #STATE
+      -->
+
+      <section class="section stats" aria-label="stats">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="stats-card" style="--color: 170, 75%, 41%">
+                <h3 class="card-title">29.3k</h3>
+
+                <p class="card-text">Student Enrolled</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 351, 83%, 61%">
+                <h3 class="card-title">32.4K</h3>
+
+                <p class="card-text">Class Completed</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 260, 100%, 67%">
+                <h3 class="card-title">100%</h3>
+
+                <p class="card-text">Satisfaction Rate</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="stats-card" style="--color: 42, 94%, 55%">
+                <h3 class="card-title">354+</h3>
+
+                <p class="card-text">Top Instructors</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <section class="section about" id="localization" aria-label="localization">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2rem;">
+      
+          <!-- Left: Content -->
+          <div class="about-content" style="flex: 1 1 50%;">
+            
+            <p class="section-subtitle">Where to find us</p>
+      
+            <h2 class="h2 section-title">
+              Our <span class="span">Location</span>
+            </h2>
+      
+            <p class="section-text">
+              Welcome to HDMWeb Academy!   
+              We are based in the heart of Ait Ourir, Marrakech, offering a professional and inspiring environment for your success.
+            </p>
+      
+            <ul class="about-list">
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                <span class="span">Easily accessible by public transportation 🚉</span>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                <span class="span">Modern, fully equipped classrooms 🖥️</span>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                <span class="span">A vibrant community of learners and innovators 🌟</span>
+              </li>
+              <li class="about-item">
+                <ion-icon name="checkmark-done-outline" aria-hidden="true"></ion-icon>
+                <span class="span">Nearby cafes, restaurants, and coworking spaces ☕</span>
+              </li>
+            </ul>
+      
+            <a href="contact.html" class="btn has-before">
+              <span class="span">Contact Us</span>
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+      
+            <!-- <img src="./assets/images/about-shape-4.svg" width="100" height="100" loading="lazy" alt="" class="shape about-shape-4"> -->
+      
+          </div>
+      
+          <!-- Right: Map -->
+          <figure class="about-banner" style="flex: 1 1 45%; position: relative; max-width: 520px; margin: auto;">
+            <div style="position: relative; padding-bottom: 71.15%; height: 0; overflow: hidden; border-radius: 10px;">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13239.188827192387!2d-7.6885898!3d31.5693081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb01c156e3df91f%3A0x9ff9de5b76be89cd!2sA%C3%AFt%20Ourir!5e0!3m2!1sfr!2sma!4v1714063303356!5m2!1sfr!2sma" 
+                width="100%" height="100%" style="border:0; position: absolute; top: 0; left: 0;" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+      
+            <img src="./assets/images/about-shape-1.svg" loading="lazy" alt="" class="shape about-shape-1">
+            <img src="./assets/images/about-shape-2.svg" loading="lazy" alt="" class="shape about-shape-2">
+            <img src="./assets/images/about-shape-3.png" loading="lazy" alt="" class="shape about-shape-3">
+          </figure>
+      
+        </div>
+      </section>
+      
+
+      <section class="start-box">
+        <div class="box-content">
+          <img src="./assets/images/logo.png" alt="HDM Web Logo" class="logo">
+          
+          <h2 class="slogan">Fill out the form</h2>
+          <p class="subtext">We will contact you as soon as possible.</p>
+          
+          <a href="inscription.html" class="btn">
+            <ion-icon name="create-outline"></ion-icon> Click here to get started
+          </a>
+        </div>
+      </section>
+      
+      
+      
+
+    </article>
+  </main>
+ 
+  
+  <a href="robot.html" class="robot-button" aria-label="Talk to a friend">
+    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+  </a>
+ 
+  
+    <div class="footer-nav">
+      <a href="programming.html" class="footer-item">
+        <img src="./assets/images/icons/icon.PNG" alt="Programming" class="footer-icon">
+        <p>Programming</p>
+      </a>
+    
+      <a href="services.html" class="footer-item">
+        <img src="./assets/images/icons/services.png" alt="Services" class="footer-icon">
+        <p>Services</p>
+      </a>
+      
+      <a href="academy.html" class="footer-item">
+        <img src="./assets/images/icons/academy.png" alt="Academy" class="footer-icon">
+        <p>Academy</p>
+      </a>
+    
+      <div class="footer-item ">
+        <a href="https://wa.me/212665073010" target="_blank" class="whatsapp-link">
+          <img src="./assets/images/icons/whatsapp.png" alt="WhatsApp" class="footer-icon">
+          <p>WhatsApp</p>
+        </a>
+      </div>
+      
+      <a href="articles.html" class="footer-item">
+        <img src="./assets/images/icons/articals.png" alt="Articles" class="footer-icon">
+        <p>Articles</p>
+      </a>
+      
+      
+      <a href="index.html" class="footer-item">
+        <img src="./assets/images/icons/home.png" alt="Home" class="footer-icon">
+        <p>Home</p>
+      </a>
+      
+    </div>
+    
+  
+  
+    <!-- 
+      - #FOOTER
+    -->
+  
+  
+    <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+  
+      <div class="footer-top section">
+        <br>
+        <div class="container grid-list">
+  
+          <div class="footer-brand">
+  
+            <a href="#" class="logo">
+              <img src="./assets/images/logo.png" width="162" height="50" alt="HDMweb logo">
+            </a>
+  
+            <p class="footer-brand-text">
+              Discover your potential with HDMWeb Academy—where creativity meets technology and students become digital leaders.
+            </p>
+            
+  
+            <div class="wrapper">
+              <span class="span">Address:</span>
+  
+              <address class="address">Ait Ourir </address>
+            </div>
+  
+            <div class="wrapper">
+              <span class="span">Call:</span>
+  
+              <a href="tel:+011234567890" class="footer-link">+212 665-073010</a>
+            </div>
+  
+            <div class="wrapper">
+              <span class="span">Email:</span>
+  
+              <a href="mailto:info@HDMweb.com" class="footer-link">hdmwebacademy@gmail.com</a>
+            </div>
+  
+          </div>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Online Platform</p>
+            </li>
+  
+            <li>
+              <a href="index.html" class="footer-link">home</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Courses</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Instructor</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Events</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Instructor Profile</a>
+            </li>
+  
+            
+  
+          </ul>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <p class="footer-list-title">Links</p>
+            </li>
+  
+            <li>
+              <a href="inscription.html" class="footer-link">Contact Us</a>
+            </li>
+  
+            <li>
+              <a href="Services.html" class="footer-link">Services</a>
+            </li>
+  
+            <li>
+              <a href="articles.html" class="footer-link">News & Articles</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-link">Coming Soon</a>
+            </li>
+  
+          </ul>
+  
+          <div class="footer-list">
+  
+            <p class="footer-list-title">Contacts</p>
+  
+            <p class="footer-list-text">
+              Enter your email address to register to our newsletter subscription
+            </p>
+  
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+  
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe</span>
+  
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+  
+            <ul class="social-list">
+  
+              <li>
+                <a href="https://www.facebook.com/share/1Acx4pQyQV/" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://linkedin.com" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://www.instagram.com/hdmwebacademy.ma?igsh=anpuZHk3MDJ4OXlx" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+  
+              <li>
+                <a href="https://wa.me/212665073010" class="social-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+  <br><br>
+            </ul>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+     
+  <br><br>
+    </footer>
+    
+  <!-- Floating Buttons Container -->
+<div class="floating-buttons">
+
+  <!-- Language Switcher Button -->
+  <div class="language-switcher-btn">
+    <select id="languageSelect" class="language-select">
+      <option value="en">EN</option>
+      <option value="fr">FR</option>
+      <option value="ar">AR</option>
+    </select>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-top-btn" aria-label="Back to Top">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </button>
+
+  <!-- Robot Chat Button -->
+  <a href="robot.html" class="robot-button" aria-label="Talk to a friend">
+    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+  </a>
+
+</div>
+
+  
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
